@@ -1,6 +1,5 @@
+/* 1. css variables */
 :root {
-   
-
 --blue-200 : hsl(193, 38%, 86%);
 --green-300 : hsl(150, 100%, 66%);
 
@@ -10,12 +9,33 @@
 --blue-950: hsl(218, 23%, 16%);
 }
 
+/* 2. reset base styles */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
 
-html {
+html, body {
     font-family: manrope, arial; 
     font-size: 28px;
     font-weight: 800; 
+    color: var(--blue-200);
+    background:var(--blue-200);
 }
 
 
+/* 3. layout containers */
+.card {
 
+}
+
+/* 4. components */
+
+
+/* 5. child elements */
+
+
+/* attribution */
+
+/* media queries */
