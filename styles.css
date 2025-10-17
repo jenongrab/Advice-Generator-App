@@ -36,36 +36,51 @@ main{
 }
 
 
-/* 3. layout containers */
+/* 3. layout containers, both style and structure/display type */
 .card {
     background:var(---blue-600); 
+    border-radius:5px;
+    padding: 16px 16px 40px 16px;
+    /* max-width is set so it doesn't expand in desktop screen */
+    max-width: 320px; 
 
     display: flexbox; 
     flex-direction: column;
-    
+    gap: 24px;
 
-}
-
-& #advice {
-    color:hsl(150, 100%, 66%);
-}
-
-& #button {
-    color: hsl(150, 100%, 66%);
-    
 }
 
 /* 4. components */
 
 
-/* 5. child elements */
+    & #advice {
+    color:hsl(150, 100%, 66%);
+    font-size: 10px;
+    }
+
+/* 5. child elements...define size and shape of button element */
+    & #button {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    
+    }
 
 
-/* 6. attribution */
+
+
+
+
+/* 6. attribution goes directly underneath */
 
 .attribution {
     display: flexbox;
     flex-direction: column;
+    /* fixed at the bottom regardless of other elements */
+    position: absolute;
+    bottom: 0;
+
 
 }
 
