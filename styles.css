@@ -64,6 +64,12 @@ main{
     height: 50px;
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
+    /* trying to centre the button...text-align centers the element to the parents */
+    /* margin centers for block level elements  */
+    /* flex is for child of flexbox */
+    display: flex;
+    margin: auto;
+
     
     }
 
