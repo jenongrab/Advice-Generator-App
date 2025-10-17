@@ -44,6 +44,7 @@ main{
     background: var(--blue-900); 
     border-radius:5px;
     align-items: center;
+    position: relative;
     /* padding of inside elements */
     padding: 30px 40px 0px 40px;
     /* max-width is set so it doesn't expand in desktop screen */
@@ -81,10 +82,10 @@ main{
 
 #button {
     width: 50px;
-    height: 50px;
+    aspect-ratio: 1/1;
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
     
 
     /* trying to centre the button...text-align centers the element to the parents */
@@ -93,9 +94,11 @@ main{
     display: flex;
     /* margin: auto; */
     justify-content: center;
-    /* align-items fixes the size */
+    /* align-items fixes the size of the items INSIDE the button */
+    align-items: center;
 
     padding: 0;
+    cursor: pointer;
     border: none; 
     
 
@@ -110,6 +113,7 @@ main{
 #dice img {
         width: 24px;             /* scale icon as needed */
         height: 24px;
+        object-fit: contain;
         display: block;    
         
     }
