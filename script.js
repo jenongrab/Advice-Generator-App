@@ -1,7 +1,9 @@
 // 1. listen for mouse hover, add glow if hover
-// a. check domloaded
+// a. DOMLOAD not needed
 // 2. listen for button press, if pressed, load API 
 
+const adviceText = document.getElementById("quote"); 
+const adviceId = document.getElementById("adviceId");
 
 const button = document.getElementById("button");
 
@@ -13,6 +15,40 @@ button.addEventListener("mouseover", () => {
 button.addEventListener("mouseout", () => {
     button.classList.remove("button-glow");
 });
+
+button.addEventListener("click", () => {
+    // connect to api thru request here
+    fetch ("https://api.adviceslip.com/advice", {
+        // GET method is default
+        method: "GET"
+    }) 
+    // parse json from response 
+    .then(response => response.json()) 
+    .then(data => {
+        const id = data.slip.id;
+        const advice = data.slip.advice;
+
+
+        console.log(`Advice #${adviceId}: ${adviceText}`);
+
+        if(adviceId){
+            adviceId.textContent = `Advice #${id}`;
+
+        }
+
+        if(adviceText) {
+            adviceText.textContent = `${advice}`; 
+        }
+        
+
+    })
+
+    .catch(error => {
+        console.error("Error fetching advice:", error);
+      });
+  });
+
+
 
 
 //   window.addEventListener("DOMContentLoaded", () => {
