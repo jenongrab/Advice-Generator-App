@@ -63,14 +63,14 @@ main{
 /* 4. components */
 
 
-    & #advice {
+#advice {
     color:hsl(150, 100%, 66%);
     font-size: 10px;
     text-align: center;
     }
 
 /* 5. child elements...define size and shape of button element */
-    & #button {
+#button {
     width: 50px;
     height: 50px;
     background-color: hsl(150, 100%, 66%);
@@ -95,14 +95,14 @@ main{
     
     }
 
-    & #divider {
-        background-image: url(design/pattern-divider-desktop.svg);
-        width: 64px;
-        height: 64px;
+#divider {
+        background-image: url(images/pattern-divider-desktop.svg);
+        width: 100px;
+        height: 100px;
 
     }
 
-    & #dice img {
+#dice img {
         width: 5px;             /* scale icon as needed */
         height: 5px;
         display: block;    
@@ -130,7 +130,9 @@ main{
 
 @media (max-width: 1440px) {
     #divider {
-        background-image: url(design/pattern-divider-mobile.svg);
+        background-image: url(images/pattern-divider-mobile.svg);
+        width: 100px;
+        height: 100px;
 
 
     }
