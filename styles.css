@@ -75,8 +75,11 @@ main{
 
 #divider {
     background-image: url(images/pattern-divider-desktop.svg);
-    width: 100px;
-    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 250px;
+    height: 30px;
 
 }
 
@@ -119,8 +122,6 @@ main{
 
 
 
-
-
 /* 6. attribution goes directly underneath */
 
 .attribution {
@@ -138,8 +139,11 @@ main{
 @media (max-width: 1440px) {
     #divider {
         background-image: url(images/pattern-divider-mobile.svg);
-        width: 100px;
-        height: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 250px;
+        height: 30px;
 
 
     }
