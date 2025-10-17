@@ -20,9 +20,22 @@ button.addEventListener("click", () => {
     // connect to api thru request here
     fetch ("https://api.adviceslip.com/advice", {
         // GET method is default
-        method: "GET"
+        method: "GET",
+        // HEADER tells the server what kind of data you're sending (formatted)
+        // headers: {
+        //     "Content-Type": "application/json"
+        //   },
+        // BODY tells server the actual data turned intpo a json string
+        //  body: JSON.stringify({
+        //  name: "John Doe",
+        //  age: 30
+        //   })
     }) 
-    // parse json from response 
+    // fetch(...) makes the HTTP request and returns a Response object.
+    // .then(response => response.json()) turns that response into a JavaScript object by parsing the JSON.
+    // The result of response.json() is passed into the next .then().
+    // That next function receives it as a parameter — and in our case, we named that parameter data.
+    //
     .then(response => response.json()) 
     .then(data => {
         const id = data.slip.id;
