@@ -18,7 +18,7 @@
 /* outline the styles & background colours in html and body */
 html, body {
     font-family: manrope, arial; 
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 800; 
     color: var(--blue-200);
 
@@ -43,7 +43,8 @@ main{
 
     background: var(---blue-600); 
     border-radius:5px;
-    padding: 20px 40px 40px 40px;
+    /* padding of inside elements */
+    padding: 30px 40px 0px 40px;
     /* max-width is set so it doesn't expand in desktop screen */
     /* height is fixed at 250px while width will span 90% of the viewport width */
     width: 90vw;
@@ -74,6 +75,8 @@ main{
     height: 50px;
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
+    margin-bottom: -10px;
+    
 
     /* trying to centre the button...text-align centers the element to the parents */
     /* margin centers for block level elements  */
