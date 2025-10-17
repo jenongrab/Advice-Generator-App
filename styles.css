@@ -101,18 +101,16 @@ main{
     cursor: pointer;
     border: none; 
     
-
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
+    /* absolute position on the button allows you to place it exactly where you want, relative to the .card. */
+    position: absolute;
+    bottom: -5px;
 
     
     }
 
-
-#dice img {
-        width: 24px;             /* scale icon as needed */
-        height: 24px;
+#button img {
+        width: 25px;             
+        aspect-ratio: 1/1;
         object-fit: contain;
         display: block;    
         
