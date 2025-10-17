@@ -16,18 +16,43 @@
     box-sizing: border-box;
 }
 
+/* outline the styles & background colours in html and body */
 html, body {
     font-family: manrope, arial; 
     font-size: 28px;
     font-weight: 800; 
     color: var(--blue-200);
-    background:var(--blue-200);
+
+    background:var(--blue-950);
+}
+
+/* main here reflects the organisation of these elements rather than styles */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* 3. layout containers */
 .card {
+    background:var(---blue-600); 
 
+    display: flexbox; 
+    flex-direction: column;
+    
+
+}
+
+& #advice {
+    color:hsl(150, 100%, 66%);
+}
+
+& #button {
+    color: hsl(150, 100%, 66%);
+    
 }
 
 /* 4. components */
@@ -36,6 +61,12 @@ html, body {
 /* 5. child elements */
 
 
-/* attribution */
+/* 6. attribution */
 
-/* media queries */
+.attribution {
+    display: flexbox;
+    flex-direction: column;
+
+}
+
+/* 7. media queries */
