@@ -34,7 +34,7 @@ main{
     justify-content: center;
     align-items: center;
     /* responsive design for smallest  */
-    height: 100svh;
+    height: 100vh;
 }
 
 
@@ -43,6 +43,7 @@ main{
 
     background: var(--blue-900); 
     border-radius:5px;
+    align-items: center;
     /* padding of inside elements */
     padding: 30px 40px 0px 40px;
     /* max-width is set so it doesn't expand in desktop screen */
@@ -70,6 +71,14 @@ main{
     }
 
 /* 5. child elements...define size and shape of button element */
+
+#divider {
+    background-image: url(images/pattern-divider-desktop.svg);
+    width: 100px;
+    height: 100px;
+
+}
+
 #button {
     width: 50px;
     height: 50px;
@@ -82,10 +91,12 @@ main{
     /* margin centers for block level elements  */
     /* flex is for child of flexbox */
     display: flex;
-    margin: auto;
+    /* margin: auto; */
     justify-content: center;
     /* align-items fixes the size */
-    align-items: center;
+
+    padding: 0;
+    border: none; 
     
 
     /* position: absolute; */
@@ -95,16 +106,10 @@ main{
     
     }
 
-#divider {
-        background-image: url(images/pattern-divider-desktop.svg);
-        width: 100px;
-        height: 100px;
-
-    }
 
 #dice img {
-        width: 5px;             /* scale icon as needed */
-        height: 5px;
+        width: 24px;             /* scale icon as needed */
+        height: 24px;
         display: block;    
         
     }
@@ -117,7 +122,7 @@ main{
 /* 6. attribution goes directly underneath */
 
 .attribution {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     /* fixed at the bottom regardless of other elements */
     position: absolute;
