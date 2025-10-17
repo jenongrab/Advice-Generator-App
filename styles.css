@@ -41,7 +41,7 @@ main{
 /* 3. layout containers, both style and structure/display type */
 .card {
 
-    background: var(---blue-600); 
+    background: var(--blue-900); 
     border-radius:5px;
     /* padding of inside elements */
     padding: 30px 40px 0px 40px;
@@ -97,6 +97,9 @@ main{
 
     & #divider {
         background-image: url(design/pattern-divider-desktop.svg);
+        width: 64px;
+        height: 64px;
+
     }
 
     & #dice img {
