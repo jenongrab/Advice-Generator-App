@@ -45,6 +45,9 @@ main{
     border-radius:5px;
     padding: 20px 40px 40px 40px;
     /* max-width is set so it doesn't expand in desktop screen */
+    /* height is fixed at 250px while width will span 90% of the viewport width */
+    width: 90vw;
+    height: 250px;
     max-width: 320px; 
 
 
@@ -89,9 +92,13 @@ main{
     
     }
 
+    & #divider {
+        background-image: url(design/pattern-divider-desktop.svg);
+    }
+
     & #dice img {
-        width: 10px;             /* scale icon as needed */
-        height: 10px;
+        width: 5px;             /* scale icon as needed */
+        height: 5px;
         display: block;    
         
     }
@@ -114,3 +121,11 @@ main{
 }
 
 /* 7. media queries */
+
+@media (max-width: 1440px) {
+    #divider {
+        background-image: url(design/pattern-divider-mobile.svg);
+
+
+    }
+}
