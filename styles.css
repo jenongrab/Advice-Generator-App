@@ -111,6 +111,14 @@ main{
     
     }
 
+.button-glow {
+    box-shadow:
+    0 0 8px hsl(150, 100%, 66%),
+    0 0 16px hsl(150, 100%, 66%),
+    0 0 24px hsl(150, 100%, 66%);
+
+}
+
 #button img {
         width: 25px;             
         aspect-ratio: 1/1;
