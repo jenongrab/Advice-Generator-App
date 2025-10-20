@@ -43,21 +43,23 @@ main{
 .card {
 
     background: var(--blue-900); 
-    border-radius:5px;
+    border-radius:10px;
     align-items: center;
     position: relative;
     /* padding of inside elements */
     padding: 30px 40px 0px 40px;
     /* max-width is set so it doesn't expand in desktop screen */
     /* height is fixed at 250px while width will span 90% of the viewport width */
-    width: 90vw;
-    height: 250px;
+    /* width: 90vw;
+    height: auto;
+    /* min-height: 10px; */
     max-width: 320px; 
 
 
     display: flex; 
     flex-direction: column;
     gap: 24px;
+    
 
 
 
@@ -74,17 +76,22 @@ main{
     
     }
 
+/* adjust sizing of box so that it fits or contiants the text.  */
+#quote {
+    overflow: auto;
+}
+
 /* 5. child elements...define size and shape of button element */
 
 #divider {
     background-image: url(images/pattern-divider-desktop.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     background-size: contain;
     width: 250px;
     height: 30px;
-    padding-top: 330px;
-    position: fixed;
+    padding-bottom: 0px;
+    position: relative;
 
 }
 
@@ -93,7 +100,7 @@ main{
     aspect-ratio: 1/1;
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
-    margin-bottom: -20px;
+    margin-bottom: -25px;
     
 
     /* trying to centre the button...text-align centers the element to the parents */
@@ -110,9 +117,13 @@ main{
     border: none; 
     
     /* absolute position on the button allows you to place it exactly where you want, relative to the .card. */
-    position: absolute;
-    bottom: -5px;
+    /* position: absolute;
+    bottom: -5px; */
 
+    position: relative;
+    /* margin-top: 100px; space below content */
+    align-self: center; /* center horizontally in flex container */
+    bottom: auto; /* reset bottom */
     
     }
 
