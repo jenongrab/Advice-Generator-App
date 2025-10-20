@@ -86,7 +86,7 @@ main{
 #divider {
     background-image: url(images/pattern-divider-desktop.svg);
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     background-size: contain;
     width: 250px;
     height: 30px;
@@ -149,7 +149,10 @@ main{
     display: flex;
     flex-direction: column;
     /* fixed at the bottom regardless of other elements */
-    position: absolute;
+    padding-top: 30px;
+    position: relative;
+    font-size: 10px;
+    /* font-weight: 300; */
     bottom: 0;
 
 
