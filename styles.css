@@ -18,9 +18,10 @@
 /* outline the styles & background colours in html and body */
 html, body {
     font-family: manrope, arial; 
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 800; 
     color: var(--blue-200);
+    text-align: center;
 
     background: var(--blue-950);
     
@@ -65,10 +66,11 @@ main{
 /* 4. components */
 
 
-#advice {
+#adviceId {
     color:hsl(150, 100%, 66%);
     font-size: 10px;
     text-align: center;
+    
     }
 
 /* 5. child elements...define size and shape of button element */

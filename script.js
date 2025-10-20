@@ -42,15 +42,15 @@ button.addEventListener("click", () => {
         const advice = data.slip.advice;
 
 
-        console.log(`Advice #${adviceId}: ${adviceText}`);
+        console.log(`ADVICE #${adviceId}: ${adviceText}`);
 
         if(adviceId){
-            adviceId.textContent = `Advice #${id}`;
+            adviceId.textContent = `ADVICE #${id}`;
 
         }
 
         if(adviceText) {
-            adviceText.textContent = `${advice}`; 
+            adviceText.textContent = `"${advice}"`; 
         }
         
 
@@ -73,11 +73,5 @@ button.addEventListener("click", () => {
 //         console.log("hovered");
 //       });
 
-//       button.addEventListener("mouseout", () => {
-//         button.classList.remove("button-glow");
-//       });
-//     } else {
-//       console.error("Button with id='button' not found");
-//     }
 //   });
 
